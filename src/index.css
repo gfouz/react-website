@@ -1,0 +1,33 @@
+html {
+  --red: #cb3837;
+  --yellow: #ffc329;
+  --brown: #a0450e;
+  --orange: #f7482e;
+  --green:  #80cc28;
+  --grey: #797777;
+
+  max-width: 1300px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+
