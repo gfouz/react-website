@@ -1,5 +1,5 @@
 import * as React from 'react';
-import StyledHeader from "./StyledHeader";
+import StyledHeader from "./Header.styled";
 import { useLocation, Link } from "react-router-dom";
 
 export default function Header(props) {
@@ -16,6 +16,7 @@ export default function Header(props) {
         fontFamily={props.font}
         position={props.position}
         height={props.height}
+        margin={props.margin}
         logo={props.logo}
       >
         <div className="links">

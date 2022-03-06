@@ -8,6 +8,7 @@ const StyledHeader = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  margin: ${(props)=> props.margin || "margin: 0"};
   background-color: ${(props)=> props.bg || "#444444"};
   position: ${(props)=> props.position};
 

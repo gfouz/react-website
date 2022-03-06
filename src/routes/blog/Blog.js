@@ -69,7 +69,8 @@ const StyledBlog = styled.div`
   .blog__image {
     max-width: 100%;
     height: auto;
-    margin: 1em;
+    display: block;
+    margin: 2.5em 0;
   }
   .blog-footer {
     background-color: var(--violet);

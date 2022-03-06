@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { bool, func } from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "../../theme";
 import { GlobalStyles } from "../../global";
@@ -12,11 +11,10 @@ const Home = () => {
       <React.Fragment>
         <GlobalStyles />
         <StyledHome>
-          <div className="l-grid">
-            <section className="l-grid__item">
-              <h1 className="l-grid__title">
-              port<span className="l-grid__embedded">folio</span></h1>
-              <div className="l-grid__line"></div>
+          <div className="l-grid homepage">
+            <section className="homepage__item">
+              <h1 className="homepage__title">portfolio</h1>
+              <div className="homepage__line"></div>
             </section>
             <nav className="navbar">
               <ul className="navbar__list">
@@ -41,18 +39,14 @@ const Home = () => {
               <div className="logo__image-container">
                 <img src="./images/handshake.svg" alt="gfouz-logo" />
               </div>
-              <h6 className="l-grid__pro">WEB DEVELOPER</h6>
-              <h1 className="l-grid__identity">GFOUZ &copy; {new Date().getFullYear()}</h1>
+              <h6 className="logo__skills">WEB DEVELOPER</h6>
+              <h1 className="logo__acronym">GFOUZ &copy; {new Date().getFullYear()}</h1>
             </section>
           </div>
         </StyledHome>
       </React.Fragment>
     </ThemeProvider>
   );
-};
-Home.propTypes = {
-  open: bool,
-  setOpen: func,
 };
 export default Home;
 
@@ -67,7 +61,8 @@ const StyledHome = styled.div`
     height: 100vh;
     background-color: #222222;
     color: #888888;
-
+    }
+  .homepage { 
     &__item {
       width: 100%;
     }
@@ -81,19 +76,13 @@ const StyledHome = styled.div`
       animation: title 1s;
       animation-fill-mode: forwards;
     }
-    &__embedded {
-      color: #ffffff;
-      text-shadow: 1px 1px 10px #ffffff;
-    }
     &__line {
       height: 2px;
       margin: 0 auto;
       animation: line 3s;
       animation-fill-mode: forwards;
     }
-    &__pro {
-      color: var(--green);
-    }
+    
   }
   .navbar {
     &__list {
@@ -115,18 +104,27 @@ const StyledHome = styled.div`
       color: var(--green);
     }
   }
-  .logo__image-container {
+  .logo {
+
+   &__skills {
+      color: var(--green);
+      margin: 1em 0;
+    }
+    &__acronym {
+    margin: 1.5em 0;
+    color: #fffff0;
+    }
+    &__image-container {
     width: 10em;
     height: auto;
+    margin: 1em 0;
   }
-  .logo__image {
+  &__image {
     max-width: 100%;
     height: auto;
   }
-  .l-grid__identity {
-    margin:0.5em 0;
-    color: #fffff0;
   }
+  
   @keyframes line {
     0% {
       width: 0;

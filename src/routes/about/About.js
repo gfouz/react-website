@@ -34,12 +34,17 @@ const About = () => {
             </h1>
           </div>
           <img
-            src="./images/handshake.svg"
+            src="./images/handshake-red.svg"
             alt="gfouz-logo"
             className="upperbar__image"
           />
         </figure>
-        <Header height="100px" bg="#ffffff" color="#ff0000" />
+        <Header 
+          height="100px" 
+          bg="#ffffff" 
+          color="#ff0000" 
+          margin="2em 0"
+          />
         <section className="outstanding">
           <article className="outstanding__item">
             <div className="outstanding__avatar-container">
@@ -83,7 +88,7 @@ const About = () => {
           <article className="outstanding__item">
             <h3 className="outstanding__title">Tambien importante</h3>
             <p className="outstanding__paragraph">{content[1].paragraph}</p>
-            <h5 className="outstanding__title">STACK QUE UTILIZO:</h5>
+            <h5 className="outstanding__stack">STACK QUE UTILIZO:</h5>
             <div className="list-group">
               <ul className="list">
                 <li>html</li>

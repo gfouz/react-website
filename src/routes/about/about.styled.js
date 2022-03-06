@@ -90,6 +90,10 @@ const StyledAbout = styled.div`
       width: 70px;
     }
   }
+  .outstanding__stack {
+    color: #666666;
+    margin: 2em 0.5em 0 1em;
+  }
   .list-group {
     display: flex;
     justify-content: space-between;
@@ -104,7 +108,7 @@ const StyledAbout = styled.div`
     }
   }
   .technologies {
-    height: 250px;
+    height: 350px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
