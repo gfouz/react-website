@@ -34,7 +34,7 @@ const About = () => {
             </h1>
           </div>
           <img
-            src="/images/handshake.svg"
+            src="./images/handshake.svg"
             alt="gfouz-logo"
             className="upperbar__image"
           />
@@ -44,7 +44,7 @@ const About = () => {
           <article className="outstanding__item">
             <div className="outstanding__avatar-container">
               <img
-                src="/images/giov.svg"
+                src="./images/giov.svg"
                 alt="giovani"
                 className="outstanding__avatar"
               />
@@ -56,7 +56,7 @@ const About = () => {
           </article>
           <article className="outstanding__item">
             <img
-              src="/images/laptop.jpg"
+              src="./images/laptop.jpg"
               className="outstanding__laptop-image"
               alt="laptop"
             />
@@ -64,18 +64,18 @@ const About = () => {
           </article>
         </section>
         <article className="technologies">
-          <img src="/images/react.svg" alt="react" />
+          <img src="./images/react.svg" alt="react" />
           <div className="column">
-            <img src="/images/next.svg" alt="next" />
+            <img src="./images/next.svg" alt="next" />
             <h3>THIS IS MY STACK</h3>
-            <img src="/images/graphql.svg" alt="graphql" />
+            <img src="./images/graphql.svg" alt="graphql" />
           </div>
-          <img src="/images/redux.svg" alt="redux" />
+          <img src="./images/redux.svg" alt="redux" />
         </article>
         <section className="outstanding">
           <article className="outstanding__item">
             <div className="outstanding__icon">
-              <img src="/images/greylamp.svg" alt="giovani" />
+              <img src="./images/greylamp.svg" alt="giovani" />
             </div>
             <h3 className="outstanding__title">Conceptos importantes</h3>
             <p className="outstanding__paragraph">{content[0].paragraph}</p>

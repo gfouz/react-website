@@ -4,7 +4,6 @@ import postlist from "../../posts.json";
 import { Link } from "react-router-dom";
 
 function PostList() {
-  //const excerpt = postlist.map(post=>post.content.slice(0, 300) + '...' )
   return (
     <>
       <StyledPost>
@@ -15,7 +14,7 @@ function PostList() {
               postlist.map((post, i) => {
                 return (
                   <div className="posts__card" key={post.id}>
-                    <img className="posts__image" src={`/images/${post.img}`} alt="post"/>
+                    <img className="posts__image" src={`./images/${post.img}`} alt="post"/>
                     <div className="posts__card-text">
                       <h4 className="posts__title">{post.title}</h4>
                       <small className="posts__info">

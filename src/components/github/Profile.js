@@ -9,7 +9,7 @@ const Profile = () => {
         <article className="l-flex">
         <div className="outlook">
         <h4 className="outlook__topic">Mi perspectiva personal</h4>
-        <img src="/images/lamp.svg" alt="developer" className="outlook__image"/>
+        <img src="./images/lamp.svg" alt="developer" className="outlook__image"/>
         <p className="outlook__text">
            {outlook}
         </p>

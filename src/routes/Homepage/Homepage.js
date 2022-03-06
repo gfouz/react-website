@@ -39,7 +39,7 @@ const Home = () => {
             </nav>
             <section className="logo">
               <div className="logo__image-container">
-                <img src="/images/handshake.svg" alt="gfouz-logo" />
+                <img src="./images/handshake.svg" alt="gfouz-logo" />
               </div>
               <h6 className="l-grid__pro">WEB DEVELOPER</h6>
               <h1 className="l-grid__identity">GFOUZ &copy; {new Date().getFullYear()}</h1>

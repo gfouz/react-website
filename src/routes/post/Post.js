@@ -24,7 +24,7 @@ function Post() {
         <div className="l-post">
           <section className="post">
             <div>
-              <img className="post__image" src={`/images/${slug.img}`} alt="post" />
+              <img className="post__image" src={`./images/${slug.img}`} alt="post" />
             </div> 
             <ReactMarkdown
               id={slug.id}
