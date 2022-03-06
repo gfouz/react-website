@@ -67,10 +67,10 @@ const StyledBlog = styled.div`
     }
   }
   .blog__image {
-    max-width: 100%;
+    width: 200px;
     height: auto;
     display: block;
-    margin: 2.5em 0;
+    margin: 3em 1em;
   }
   .blog-footer {
     background-color: var(--violet);
