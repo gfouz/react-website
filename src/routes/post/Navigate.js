@@ -47,6 +47,7 @@ const Navigate = (props) => {
 export default Navigate;
 const StyledNav = styled.div`
   --violet: #820aa1;
+  --blue: #3f8897;
   .navigate {
     margin: 2em 0;
     heigth: 100px;
@@ -61,15 +62,14 @@ const StyledNav = styled.div`
     border-radius: 8px;
     padding: 0.3em 1em;
     margin: 1em;
-    color: #ff9800;
+    color: #222222;
     background-color: #424242;
     text-transform: uppercase;
     font-weight: bolder;
-    background-color: #000000;
-    box-shadow: 1px 1px 15px var(--violet);
+    background-color: #888888;
   }
   .btn--disabled {
-    color: #666666;
+    color: #ff0000;
     background-color: #999999;
   }
 `;

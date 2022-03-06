@@ -39,6 +39,8 @@ export default PostList;
 const StyledPost = styled.div`
  height: 100%;
  --violet: #820aa1;
+ --blue: #3f8897;
+ --black: #444444;
  @mixin bg {
    background-color: red;
  }
@@ -52,18 +54,19 @@ const StyledPost = styled.div`
 
 }
 .posts__topic {
-   color: #0168b8;
+   color: var(--black);
+   font-family: literata;
 }
 .posts__card {
     display: flex;
-    max-width: 600px;
+    max-width: 700px;
     height: 200px;
     color: #c7bfa41;
     margin: 2em;
     text-align: left;
     font-family: literata;
     border-radius: 5px;
-    box-shadow: 1px 1px 10px var(--violet);
+    box-shadow: 1px 1px 10px var(--blue);
   }
 .posts__card-text {
     border-color:#0168b8;

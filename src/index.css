@@ -25,9 +25,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
 }
 
 

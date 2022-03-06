@@ -8,20 +8,13 @@ function Blog() {
     <>
       <StyledBlog>
         <div className="l-blog">
-          <Header bg="#820aa1" color="#ffffff" />
+          <Header bg="#222222" color="#ffffff" />
           <section className="blog">
-            <article className="blog__logo">
-              <img
-                className="blog__image"
-                src="./images/superman.svg"
-                alt="blogIcon"
-              />
-              <h1 className="blog__title">
-                <span>l</span>earning<span>m</span>ore
-              </h1>
-            </article>
+              <div className="blog__image">
+                <img src="./images/blog.jpg"  alt ="blogImage"/>
+              </div>
             <article className="blog__posts">
-             <Postlist />
+              <Postlist />
             </article>
           </section>
           <footer className="blog-footer">
@@ -37,6 +30,9 @@ export default Blog;
 
 const StyledBlog = styled.div`
   --violet: #820aa1;
+  --grey: #222222;
+  --blue: #3f8897;
+
   .l-blog {
     display: grid;
     grid-template-rows: 60px auto 60px;
@@ -50,30 +46,23 @@ const StyledBlog = styled.div`
     justify-content: flex-start;
 
   }
-  .blog__logo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .blog__title {
-    font-size: 2em;
-    color: var(--violet);
-    margin: 0 auto;
-    font-family: literata;
-    text-transform: uppercase;
-    span {
-      color: #222222;
-      font-size: 1.3em;
-    }
-  }
   .blog__image {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 3em 1em;
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0;
+      @media (min-width: 600px){
+        margin: 3em 0 0 0;
+        border-radius: 9px;
+        box-shadow: 1px 1px 10px var(--blue);
+      }
+    }
+    
+    
   }
   .blog-footer {
-    background-color: var(--violet);
+    background-color: var(--grey);
     display: grid;
     place-items: center;
     color: #ffffff;
