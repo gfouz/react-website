@@ -9,20 +9,20 @@ function PostList() {
     <>
       <StyledPost>
         <div className="postlist">
-          <div className="post">
-            <h3 className="post__topic">TOPICS TO READ</h3>
+          <div className="posts">
+            <h3 className="posts__topic">TOPICS TO READ</h3>
             {postlist.length &&
               postlist.map((post, i) => {
                 return (
-                  <div className="post__card" key={post.id}>
-                    <img className="post__image" src={`/images/${post.img}`} alt="post"/>
-                    <div className="post__card-text">
-                      <h4 className="post__title">{post.title}</h4>
-                      <small className="post__info">
+                  <div className="posts__card" key={post.id}>
+                    <img className="posts__image" src={`/images/${post.img}`} alt="post"/>
+                    <div className="posts__card-text">
+                      <h4 className="posts__title">{post.title}</h4>
+                      <small className="posts__info">
                         Published on: {post.date} by {post.author}
                       </small>
-                      <p className="post__description">{post.description}</p>
-                      <Link className="post__link" to={`/post/${post.id}`}>
+                      <p className="posts__description">{post.description}</p>
+                      <Link className="posts__link" to={`/post/${post.id}`}>
                         Read More
                       </Link>
                     </div>
@@ -52,10 +52,10 @@ const StyledPost = styled.div`
     margin: 3em 0;
 
 }
-.post__topic {
+.posts__topic {
    color: #0168b8;
 }
-.post__card {
+.posts__card {
     display: flex;
     max-width: 600px;
     height: 200px;
@@ -66,7 +66,7 @@ const StyledPost = styled.div`
     border-radius: 5px;
     box-shadow: 1px 1px 10px var(--violet);
   }
-.post__card-text {
+.posts__card-text {
     border-color:#0168b8;
     border-radius: 5px;
     padding: 1em;
@@ -75,25 +75,25 @@ const StyledPost = styled.div`
     font-size: calc(0.6em + 1vw)
 } 
 
-.post__title {
+.posts__title {
     color: #999999;
     margin: 0;
     padding: 0 0.3em;
     font-weight: bolder;
     text-transform: uppercase;
   }
-.post__image {
+.posts__image {
    max-width: 150px;
    height: auto;
    object-fit: cover;
 }  
-.post__body {
+.posts__body {
   
  }
-.post__description {
+.posts__description {
   color: #999999;
 }
-.post__link {
+.posts__link {
   position: relative;
   top: 10px;
   margin: 0 0 1em 0;

@@ -21,12 +21,14 @@ function Post() {
   return (
     <>
       <StyledPost>
-        <div className="l-slug">
-          <section className="slug">
-             <img className="slug__image" src={`/images/${slug.img}`} alt="post" />
+        <div className="l-post">
+          <section className="post">
+            <div>
+              <img className="post__image" src={`/images/${slug.img}`} alt="post" />
+            </div> 
             <ReactMarkdown
               id={slug.id}
-              className="slug__markdown"
+              className="post__markdown"
               children={slug.content}
               components={{
                 code({ node, inline, className, children, ...props }) {
@@ -57,42 +59,30 @@ function Post() {
 export default Post;
 
 const StyledPost = styled.div`
-  --vscode: #19202e;
-  @mixin l-flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  margin: 0 auto;
-
-  .l-slug {
+   
+  .l-post {
+    margin: 0 auto;
     border: 2px solid #f1f1f1;
     @media (min-width: 700px) {
       max-width: 80%;
     }
-    margin: 0 auto;
-    padding: 0 0.2em 2em 0.2em;
   }
-  .slug {
-    @include l-flex-column;
+  .post {
   }
-  .slug__image {
+  .post__image {
       max-width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto;
   }
-  .slug__markdown {
-    text-align: left;
+  .post__markdown {
+    margin: 2em 0;
     padding: 0 0 3em 0;
     h2 {
       text-align: center;
-      margin: 2em 0 0.5em 0;
     }
     p {
       color: #373839;
       text-align: left;
+      padding: 0.7em;
     }
     
   }
