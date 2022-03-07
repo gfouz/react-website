@@ -59,15 +59,12 @@ function Post() {
 export default Post;
 
 const StyledPost = styled.div`
-   
   .l-post {
     margin: 0 auto;
     border: 2px solid #f1f1f1;
     @media (min-width: 700px) {
       max-width: 80%;
     }
-  }
-  .post {
   }
   .post__image {
       max-width: 100%;
@@ -77,12 +74,16 @@ const StyledPost = styled.div`
     margin: 2em 0;
     padding: 0 0 3em 0;
     h2 {
-      text-align: center;
+      text-align: left;
+      color: #444444;
+      padding: 0 0.7em;
+      margin: 0;
     }
     p {
       color: #373839;
       text-align: left;
       padding: 0.7em;
+      margin: 1em 0;
     }
     
   }

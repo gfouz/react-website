@@ -63,10 +63,8 @@ const StyledNav = styled.div`
     padding: 0.3em 1em;
     margin: 1em;
     color: #222222;
-    background-color: #424242;
     text-transform: uppercase;
     font-weight: bolder;
-    background-color: #888888;
   }
   .btn--disabled {
     color: #ff0000;

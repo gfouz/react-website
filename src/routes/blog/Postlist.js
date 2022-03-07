@@ -41,6 +41,8 @@ const StyledPost = styled.div`
  --violet: #820aa1;
  --blue: #3f8897;
  --black: #444444;
+ --brown: #4b2c17;
+
  @mixin bg {
    background-color: red;
  }
@@ -54,7 +56,7 @@ const StyledPost = styled.div`
 
 }
 .posts__topic {
-   color: var(--black);
+   color: var(--brown);
    font-family: literata;
 }
 .posts__card {
@@ -63,11 +65,16 @@ const StyledPost = styled.div`
     height: 200px;
     color: #c7bfa41;
     margin: 2em;
+    transition: all 0.2s;
     text-align: left;
     font-family: literata;
     border-radius: 5px;
-    box-shadow: 1px 1px 10px var(--blue);
+    box-shadow: 1px 1px 10px #9c4508;
   }
+.posts__card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 10px #000000;
+}
 .posts__card-text {
     border-color:#0168b8;
     border-radius: 5px;
@@ -101,7 +108,8 @@ const StyledPost = styled.div`
   margin: 0 0 1em 0;
   color: #0168b8;
 }
-}  
+
+
 `;
 
 // {/*  */} these are comments

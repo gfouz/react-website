@@ -55,6 +55,7 @@ const StyledHome = styled.div`
   --blue: #40c4ff;
   --brown: #F1993F;
   --green-weird: #255842;
+  --red: #f92472;
 
   .l-grid {
     display: flex;
@@ -76,7 +77,7 @@ const StyledHome = styled.div`
       text-transform: uppercase;
       font-family: literata;
       font-size: 3em;
-      color:#F1993F;
+      color: var(--blue);
       animation: title 1s;
       animation-fill-mode: forwards;
     }
@@ -105,18 +106,18 @@ const StyledHome = styled.div`
     &__link {
       margin: 0 1em;
       text-decoration: none;
-      color: #AA4608;
+      color: #ffffff;
     }
   }
   .logo {
 
    &__skills {
-      color: #AA4608;
+      color: #ffffff;
       margin: 1em 0;
     }
     &__acronym {
     margin: 1.5em 0;
-    color: var(--brown);
+    color: var(--blue);
     }
     &__image-container {
     width: 10em;
@@ -136,7 +137,7 @@ const StyledHome = styled.div`
 
     100% {
       width: 80%;
-      background-color: #AA4608;
+      background-color: #ffffff;
     }
   }
   @keyframes navbar {

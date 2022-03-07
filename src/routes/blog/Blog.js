@@ -8,10 +8,10 @@ function Blog() {
     <>
       <StyledBlog>
         <div className="l-blog">
-          <Header bg="#222222" color="#ffffff" />
+          <Header bg="#25180c" color="#ffffff" />
           <section className="blog">
               <div className="blog__image">
-                <img src="./images/blog.jpg"  alt ="blogImage"/>
+                <h1 className="blog__title">Let's be inquisitive as children.</h1>
               </div>
             <article className="blog__posts">
               <Postlist />
@@ -32,6 +32,7 @@ const StyledBlog = styled.div`
   --violet: #820aa1;
   --grey: #222222;
   --blue: #3f8897;
+  --brown: #4b2c17;
 
   .l-blog {
     display: grid;
@@ -47,22 +48,27 @@ const StyledBlog = styled.div`
 
   }
   .blog__image {
-    img {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      margin: 0;
-      @media (min-width: 600px){
-        margin: 3em 0 0 0;
-        border-radius: 9px;
-        box-shadow: 1px 1px 10px var(--blue);
-      }
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-image: url('./images/blog.jpg');
+    background-size: 1300px;
+    background-position: center;
+    background-repeat: no-repeat;
     }
-    
+  .blog__title {
+    margin: 0 0 4em 0;
+    font-family: calibri;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000000;
+  }
     
   }
   .blog-footer {
-    background-color: var(--grey);
+    background-color: var(--brown);
     display: grid;
     place-items: center;
     color: #ffffff;
