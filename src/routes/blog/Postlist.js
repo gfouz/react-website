@@ -9,7 +9,7 @@ function PostList() {
       <StyledPost>
         <div className="postlist">
           <div className="posts">
-            <h3 className="posts__topic">TOPICS TO READ</h3>
+            <h3 className="posts__topic">READING TOPICS</h3>
             {postlist.length &&
               postlist.map((post, i) => {
                 return (
