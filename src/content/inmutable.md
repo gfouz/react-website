@@ -4,6 +4,7 @@ author: Giovani Fouz Jiménez
 description: El paradigma de la programación funcional es...
 img: laptopstand.jpg
 date: january 15, 2022
+position: center
 ---
 
 ## Composición funcional

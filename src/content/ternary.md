@@ -4,6 +4,7 @@ author: Giovani Fouz Jiménez
 description: How to simplify your code with...
 img: golden.jpg
 date: febraury 17, 2022
+position: center
 ---
 
 ## Check Data Quickly with the Ternary Operator

@@ -32,7 +32,7 @@ const StyledBlog = styled.div`
   --violet: #820aa1;
   --grey: #222222;
   --blue: #3f8897;
-  --brown: #25180c;
+  --brown: #4b2c17;
 
   .l-blog {
     display: grid;
@@ -59,13 +59,11 @@ const StyledBlog = styled.div`
     background-repeat: no-repeat;
     }
   .blog__title {
-    margin: 0 0 2.2em 0;
+    margin: 0 0 4em 0;
     font-family: calibri;
     color: #ffffff;
     text-transform: uppercase;
-    background-color: #846040;
-    padding: 0 5px;
-    border-radius: 9px;
+    text-shadow: 1px 1px 10px #000000;
   }
     
   }

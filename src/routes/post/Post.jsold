@@ -4,7 +4,6 @@ import posts from "../../posts.json";
 import styled from "styled-components";
 import { useParams } from "react-router";
 import ReactMarkdown from "react-markdown";
-import Header from "../../components/header/Header";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
@@ -17,23 +16,16 @@ function Post() {
       slug.content = post.content ? post.content : "no given content";
       slug.id = post.id ? post.id : "no given id";
       slug.img = post.img ? post.img : "no give data";
-      slug.position = post.position ? post.position : "no given position";
     }
   });
-  const styles = {
-     backgroundImage: `url(./images/${slug.img})`,
-     backgroundRepeat: "no-repeat",
-     backgroundSize: "cover",
-     backgroundPosition: slug.position,
-     height: "400px"
-  }
   return (
     <>
       <StyledPost>
         <div className="l-post">
           <section className="post">
-             <Header bg="#25180c" color="#ffffff" />
-            <div className="post__image" style = {styles}></div> 
+            <div>
+              <img className="post__image" src={`./images/${slug.img}`} alt="post" />
+            </div> 
             <ReactMarkdown
               id={slug.id}
               className="post__markdown"
@@ -74,6 +66,10 @@ const StyledPost = styled.div`
       max-width: 80%;
     }
   }
+  .post__image {
+      max-width: 100%;
+      height: auto;
+  }
   .post__markdown {
     margin: 2em 0;
     padding: 0 0 3em 0;
@@ -92,6 +88,3 @@ const StyledPost = styled.div`
     
   }
 `;
-
-
-/*<img className="post__image" src={`./images/${slug.img}`} alt="post" />*/

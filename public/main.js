@@ -58,7 +58,9 @@ const getPosts = () => {
           author: metadata.author ? metadata.author : "no author given",
           date: metadata.date ? metadata.date : "no date given",
           description: metadata.description ? metadata.description : "no given description",
+          position: metadata.position ? metadata.position : "no position given",
           content: content ? content : "no  given",
+         
         };
          postlist.push(post);
          if(i=== files.length - 1){

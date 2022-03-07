@@ -4,6 +4,7 @@ author: Giovani Fouz Jiménez
 description: Continuous deployment and...
 img: deploy.jpg
 date: febraury 5, 2022
+position: right
 ---
 
 Continuous integration (CI) and continuous delivery (CD) are two

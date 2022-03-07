@@ -4,6 +4,7 @@ author: Giovani Fouz Jiménez
 description: Que significa inmutabilidad y porque es tan importante...
 img: inmutable.jpg
 date: febraury 21, 2022
+position: center
 ---
 
 ## Mutable o Inmutable.
